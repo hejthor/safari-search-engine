@@ -19,7 +19,7 @@ jobs:
 
       - name: Build and Archive
         run: |
-          xcodebuild -workspace SafariSearchEngine.xcodeproj -scheme SafariSearchEngine -configuration Release archive -archivePath $PWD/build/SafariSearchEngine.xcarchive
+          xcodebuild -project SafariSearchEngine.xcodeproj -scheme SafariSearchEngine -configuration Release archive -archivePath $PWD/build/SafariSearchEngine.xcarchive
 
       - name: Export .app
         run: |
